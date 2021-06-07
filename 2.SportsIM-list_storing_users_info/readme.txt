@@ -1,0 +1,1 @@
+Storing users information in a LIST and adding a new route so as to display who has registered

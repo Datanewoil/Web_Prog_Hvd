@@ -1,0 +1,20 @@
+{% extends "layouts.html" %}  <!-- hey flask use the layout of layout.htmlfile-->
+
+{% block body %}
+
+    <h1>Register for frosh IMs</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofucus name="name" placeholder="Name" type="text">
+        <select name="dorm">                                               <!--select tag generates a dropdown list-->
+            <option disabled selected value="">Dorms</option>
+            <option value="Apley court">Apley court</option>
+            <option value="Canaday">Canaday</option>
+            <option value="Olympus">Olympus</option>
+            <option value="Titans">Titans</option>
+            <option value="Thar">Thar</option>
+            <option value="Lake view">Lake view</option>
+        </select>
+        <input type = "submit" value="Register">
+    </form>
+
+{% endblock %}

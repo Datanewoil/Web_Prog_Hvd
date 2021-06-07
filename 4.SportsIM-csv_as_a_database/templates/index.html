@@ -1,0 +1,20 @@
+{% extends "layouts.html" %} 
+{% block body %}
+
+    <h1>Register for frosh IMs</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofucus name="name" placeholder="Name" type="text">
+        <select name="dorm">
+            <option disabled selected value="">Dorms</option>
+            <option value="Apley court">Apley court</option>
+            <option value="Canaday">Canaday</option>
+            <option value="Olympus">Olympus</option>
+            <option value="Titans">Titans</option>
+            <option value="Thar">Thar</option>
+            <option value="Lake view">Lake view</option>
+        </select>
+        <input type = "submit" value="Register">
+        <a href="{{ url_for('registered') }}"> or Click to see who else registered</a>
+    </form>
+
+{% endblock %}
